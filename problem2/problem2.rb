@@ -14,18 +14,14 @@ max_reached = false
 
 require 'pp'
 
-while !max_reached
+index = 2
+while fib[1].to_s.size < 1000
   a = fib.shift
   fib[1] = fib[0] + a
-  if (fib[1] <= MAX_VALUE)
-    if fib[1]%2 ==0
-      sum += fib[1]
-    end
-  else
-    max_reached=true
-  end
+  index +=1
 end
 
 
-pp fib
-pp sum
+pp fib[0]
+pp fib[1]
+pp index
