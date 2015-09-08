@@ -17,6 +17,10 @@ class Integer
     true
   end
 
+  def factorial
+    f = 1; for i in 1..self; f *= i; end; f
+  end
+
   def reversed
     self.to_s.reverse.to_i
   end
